@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: linear-gradient(to right, #bb3a87, #9191e9);
+    color: white;
+    font-family: "Righteous", sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(7, 175, 147), #360268a9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  form input,
+  form button {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: none;
+    background: rgb(240, 238, 238);
+    margin: 0.5rem;
+    max-height: fit-content;
+  }
+  
+  form button {
+    color: rgb(165, 12, 96);
+    background: transparent;
+    padding: 0.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+  
+    transition: all 0.3 ease;
+  }
+  
+  form button:hover {
+    color: #49065a;
+  }
+  
+  .todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  #headings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+#headings h1{
+    font-size: 1.5rem;
+     padding-left: 1.5rem;
+    padding-right: 1.5rem; 
+}
+ 
+
+  #todo-list {
+    min-width: 30%;
+    list-style: none;
+  }
+  
+
+  .completed{
+    margin: 1rem;
+  
+  }
+
+
+  .completed:checked + .todo-item {
+    text-decoration: line-through;
+    color: rgb(27, 4, 51);
+  
+  }
+
+
+  
+  .todo {
+    padding: 0.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem;
+    color: rgb(165, 12, 96);
+    font-size: 1.5rem;
+    background: rgba(197, 202, 201, 0.596);
+  }
+  
+  button.deleteButton {
+    background: transparent;
+    border: none;
+    padding: 1rem;
+    color: #9c005e;
+    font-size: 1.5rem;
+  }
+  
+  button.deleteButton:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    background: #9c005e;
+    color: white;
+  
+  }
+  
+img{
+    width: 3rem;
+    height: 3rem;
+   
+}  
+
+p{
+    margin: 1.8rem;
+}
