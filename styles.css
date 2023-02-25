@@ -69,8 +69,8 @@
   }
 #headings h1{
     font-size: 1.5rem;
-     padding-left: 1.5rem;
-    padding-right: 1.5rem; 
+     padding-left: 2.4rem;
+    padding-right: 2.4rem; 
 }
  
 
@@ -138,4 +138,15 @@ p{
 .fall{
     transform: translateY(8rem) rotateZ(20deg);
     opacity: 0;
+}
+
+
+@media (max-width: 500px){
+p{
+  display: none;
+  
+}
+#headings h1{
+  display: none;
+}
 }

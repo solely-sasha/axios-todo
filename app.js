@@ -112,6 +112,8 @@ todoForm.addEventListener("submit", (e) => {
     imgUrl: todoForm.imgUrl.value,
   };
 
+
+
   //---------------- Reset Input Fields--------------------------------------------------------------------------------------------------------
   todoForm.reset();
 
