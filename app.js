@@ -31,6 +31,7 @@ function createTodo(data) {
 
     const info = document.createElement("p");
     info.textContent = data[i].description;
+    info.classList.add("description");
     todoDiv.appendChild(info);
 
     const price = document.createElement("p");
@@ -73,7 +74,18 @@ function createTodo(data) {
 
     todoList.appendChild(todoDiv);
 
-    deleteButton.addEventListener("click", () => {
+
+    deleteButton.addEventListener("click", (e) => {
+        const item = e.target;
+        if(item.classList[0]=== "deleteButton"){
+            const todo = item.parentElement;
+            //animation
+            todo.classList.add('fall');
+            todo.addEventListener("transitionend", function(){
+                todo.remove()
+            })
+         
+        }
       axios
         .delete(`https://api.vschool.io/sashasims/todo/${data[i]._id}`)
         .then((res) => getData())
@@ -110,3 +122,5 @@ todoForm.addEventListener("submit", (e) => {
 
     .catch((err) => console.log(err));
 });
+
+

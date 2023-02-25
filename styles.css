@@ -82,16 +82,19 @@
 
   .completed{
     margin: 1rem;
+   
+    
   
   }
 
 
-  .completed:checked + .todo-item {
+  .completed:checked + .todo-item  {
     text-decoration: line-through;
-    color: rgb(27, 4, 51);
+    color: rgb(72, 35, 111);
+    opacity: 0.5;
+ 
   
   }
-
 
   
   .todo {
@@ -103,6 +106,7 @@
     color: rgb(165, 12, 96);
     font-size: 1.5rem;
     background: rgba(197, 202, 201, 0.596);
+    transition: all 0.5s ease;
   }
   
   button.deleteButton {
@@ -129,4 +133,9 @@ img{
 
 p{
     margin: 1.8rem;
+}
+
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
 }
